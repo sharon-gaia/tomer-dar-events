@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>תומר דר הפקות – קטלוג אטרקציות 2026</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#FAF4E8;color:#2d2314;direction:rtl;overflow-x:hidden;}
+
+/* HERO */
+.hero{background:linear-gradient(150deg,#C84B11 0%,#E8650A 40%,#F5943A 75%,#D4570E 100%);padding:36px 20px 40px;text-align:center;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='3'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
+.hero-logo{height:80px;position:relative;z-index:1;filter:drop-shadow(0 3px 12px rgba(0,0,0,0.3));animation:pop .7s cubic-bezier(.34,1.56,.64,1) both;}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+.hero-title{font-size:1.6rem;font-weight:900;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.3);margin:12px 0 4px;position:relative;z-index:1;}
+.hero-sub{color:rgba(255,255,255,.88);font-size:.95rem;position:relative;z-index:1;margin-bottom:16px;}
+.stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:14px 0;position:relative;z-index:1;}
+.stat{background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.35);border-radius:50px;padding:7px 18px;color:#fff;font-weight:800;font-size:.88rem;text-align:center;}
+.stat b{display:block;font-size:1.3rem;line-height:1.1;}
+.contacts{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:14px;position:relative;z-index:1;}
+.cc{background:rgba(255,255,255,.92);border-radius:50px;padding:7px 16px;font-size:.82rem;font-weight:700;color:#C84B11;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.cc:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 6px 18px rgba(0,0,0,.2);}
+
+/* SEARCH */
+.search-bar{background:linear-gradient(135deg,#C84B11,#E8650A);padding:0 16px 22px;}
+.search-bar input{display:block;width:100%;max-width:560px;margin:0 auto;padding:14px 48px 14px 18px;border-radius:50px;border:2px solid rgba(255,255,255,.5);background:#fff;font-size:1rem;color:#333;direction:rtl;outline:none;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+.search-bar input:focus{border-color:#C84B11;}
+
+/* TABS */
+.tabs-wrap{position:sticky;top:0;z-index:90;background:#fff;box-shadow:0 3px 16px rgba(0,0,0,.1);padding:12px 16px;}
+.tabs{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-width:1100px;margin:0 auto;}
+.tab{padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:700;cursor:pointer;border:2px solid #e5ddd0;background:#faf4e8;color:#7a6050;transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;}
+.tab:hover{transform:scale(1.06);}
+.tab.active{color:#fff;transform:scale(1.08);box-shadow:0 4px 14px rgba(0,0,0,.2);}
+.tab[data-c=all].active{background:#C84B11;border-color:#C84B11;}
+.tab[data-c=ninja].active{background:#c0392b;border-color:#c0392b;}
+.tab[data-c=water].active{background:#0077b6;border-color:#0077b6;}
+.tab[data-c=festival].active{background:#d4830a;border-color:#d4830a;}
+.tab[data-c=game].active{background:#27ae60;border-color:#27ae60;}
+.tab[data-c=deco].active{background:#7c4dff;border-color:#7c4dff;}
+.tab[data-c=kids].active{background:#d63384;border-color:#d63384;}
+.tab[data-c=workshop].active{background:#e67e22;border-color:#e67e22;}
+
+/* MAIN */
+.main{max-width:1200px;margin:0 auto;padding:32px 16px 60px;}
+.sec{margin-bottom:52px;}
+.sec.hidden{display:none;}
+
+/* SECTION HEADER */
+.sec-hdr{display:flex;align-items:center;gap:12px;padding:16px 22px;border-radius:16px;color:#fff;margin-bottom:20px;position:relative;overflow:hidden;}
+.sec-hdr::after{content:attr(data-bg);position:absolute;left:16px;font-size:4.5rem;opacity:.12;line-height:1;pointer-events:none;}
+.sec-ninja .sec-hdr{background:linear-gradient(135deg,#c0392b,#e74c3c);}
+.sec-water .sec-hdr{background:linear-gradient(135deg,#0077b6,#00b4d8);}
+.sec-festival .sec-hdr{background:linear-gradient(135deg,#d4830a,#f0a500);}
+.sec-game .sec-hdr{background:linear-gradient(135deg,#27ae60,#2ecc71);}
+.sec-deco .sec-hdr{background:linear-gradient(135deg,#7c4dff,#b39ddb);}
+.sec-kids .sec-hdr{background:linear-gradient(135deg,#d63384,#ff69b4);}
+.sec-workshop .sec-hdr{background:linear-gradient(135deg,#e67e22,#f39c12);}
+.sec-hdr-title{font-size:1.4rem;font-weight:900;flex:1;}
+.sec-hdr-count{background:rgba(255,255,255,.25);border-radius:50px;padding:3px 13px;font-size:.8rem;font-weight:700;}
+
+/* CARDS GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.08);border:2px solid #f0e8d8;cursor:pointer;transition:transform .22s cubic-bezier(.34,1.56,.64,1),box-shadow .2s,border-color .2s;}
+.card:hover{transform:translateY(-7px) scale(1.02);box-shadow:0 14px 36px rgba(0,0,0,.14);}
+.sec-ninja .card:hover{border-color:#e74c3c;}
+.sec-water .card:hover{border-color:#00b4d8;}
+.sec-festival .card:hover{border-color:#f0a500;}
+.sec-game .card:hover{border-color:#2ecc71;}
+.sec-deco .card:hover{border-color:#b39ddb;}
+.sec-kids .card:hover{border-color:#ff69b4;}
+.sec-workshop .card:hover{border-color:#f39c12;}
+
+/* CARD IMAGE */
+.c-img{width:100%;height:160px;object-fit:cover;display:block;background:#f5ece0;}
+.c-img-placeholder{width:100%;height:160px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,#fdf0e0,#fde8c8);}
+
+/* CARD TOP BAR */
+.c-bar{height:4px;}
+.sec-ninja .c-bar{background:linear-gradient(90deg,#c0392b,#e74c3c);}
+.sec-water .c-bar{background:linear-gradient(90deg,#0077b6,#48cae4);}
+.sec-festival .c-bar{background:linear-gradient(90deg,#d4830a,#ffd000);}
+.sec-game .c-bar{background:linear-gradient(90deg,#27ae60,#95d5b2);}
+.sec-deco .c-bar{background:linear-gradient(90deg,#7c4dff,#c77dff);}
+.sec-kids .c-bar{background:linear-gradient(90deg,#d63384,#ff85c1);}
+.sec-workshop .c-bar{background:linear-gradient(90deg,#e67e22,#f9c74f);}
+
+.c-body{padding:14px 16px 16px;}
+.c-emoji{font-size:1.6rem;margin-bottom:6px;display:block;transition:transform .2s;}
+.card:hover .c-emoji{transform:scale(1.25) rotate(-5deg);}
+.c-title{font-size:.98rem;font-weight:800;color:#1a1005;margin-bottom:5px;}
+.c-desc{font-size:.78rem;color:#7a6555;line-height:1.55;}
+.badges{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;}
+.badge{padding:2px 10px;border-radius:50px;font-size:.68rem;font-weight:800;}
+.b1{background:#fff3e0;color:#e65100;border:1.5px solid #ffcc80;}
+.b2{background:#e3f2fd;color:#0277bd;border:1.5px solid #90caf9;}
+.b3{background:#f3e5f5;color:#6a1b9a;border:1.5px solid #ce93d8;animation:glow 2.5s ease-in-out infinite;}
+.b4{background:#e8f5e9;color:#1b5e20;border:1.5px solid #a5d6a7;}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(106,27,154,.25)}50%{box-shadow:0 0 0 5px rgba(106,27,154,0)}}
+.c-hint{font-size:.68rem;color:#ccc;margin-top:8px;}
+.card:hover .c-hint{color:#aaa;}
+
+/* NO RESULTS */
+.no-results{text-align:center;padding:70px 20px;color:#b09880;display:none;}
+.no-results span{font-size:3rem;display:block;margin-bottom:12px;}
+
+/* ========== MODAL ========== */
+.modal-overlay{position:fixed;inset:0;background:rgba(20,10,0,.82);z-index:999;display:none;align-items:center;justify-content:center;padding:16px;}
+.modal-overlay.open{display:flex;}
+.modal{background:#fff;border-radius:20px;max-width:700px;width:100%;max-height:92vh;overflow-y:auto;position:relative;box-shadow:0 24px 80px rgba(0,0,0,.4);}
+.modal-close{position:absolute;top:12px;left:12px;width:36px;height:36px;border-radius:50%;border:none;background:rgba(0,0,0,.15);color:#fff;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:background .15s;}
+.modal-close:hover{background:rgba(0,0,0,.4);}
+
+/* Gallery */
+.gallery{position:relative;background:#111;height:320px;}
+.gallery img{width:100%;height:320px;object-fit:contain;display:none;}
+.gallery img.active{display:block;}
+.gallery-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);color:#fff;border:none;border-radius:50%;width:38px;height:38px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+.gallery-nav:hover{background:rgba(0,0,0,.7);}
+.gallery-prev{right:10px;}
+.gallery-next{left:10px;}
+.gallery-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;}
+.gdot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;transition:background .15s;}
+.gdot.active{background:#fff;}
+.gallery-count{position:absolute;top:10px;right:12px;background:rgba(0,0,0,.5);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;}
+
+/* Modal body */
+.modal-body{padding:22px 24px 28px;}
+.modal-emoji{font-size:2rem;margin-bottom:8px;display:block;}
+.modal-title{font-size:1.4rem;font-weight:900;color:#1a1005;margin-bottom:10px;}
+.modal-desc{font-size:.9rem;color:#5a4535;line-height:1.7;margin-bottom:14px;}
+.modal-badges{display:flex;flex-wrap:wrap;gap:6px;}
+
+/* FOOTER */
+footer{background:linear-gradient(135deg,#C84B11,#E8650A);padding:28px 20px;text-align:center;color:rgba(255,255,255,.92);}
+footer a{color:#fff;font-weight:700;text-decoration:none;margin:0 5px;}
+footer a:hover{text-decoration:underline;}
+.flogo{height:50px;margin-bottom:10px;opacity:.9;filter:brightness(10);}
+.fcopy{font-size:.78rem;opacity:.8;margin-top:8px;}
+
+@media(max-width:580px){
+  .hero-title{font-size:1.2rem;}
+  .grid{grid-template-columns:1fr 1fr;}
+  .gallery,.gallery img{height:220px;}
+}
+@media(max-width:380px){
+  .grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="https://files.cdn-files-a.com/uploads/1933414/400_filter_nobg_67dc63202466f.png"
+       alt="תומר דר הפקות" class="hero-logo"
+       onerror="this.style.display='none'">
+  <div class="hero-title">תומר דר הפקות – חברת המתנפחים הגדולה בישראל</div>
+  <div class="hero-sub">הפקת אירועים ופרויקטים גדולים מאז 2001 | כל האישורים וביטוחים</div>
+  <div class="stats">
+    <div class="stat"><b>25+</b>שנות ניסיון</div>
+    <div class="stat"><b>70+</b>אטרקציות</div>
+    <div class="stat"><b>7</b>קטגוריות</div>
+  </div>
+  <div class="contacts">
+    <a class="cc" href="tel:0505748224">📞 050-5748224</a>
+    <a class="cc" href="mailto:tomer5d@gmail.com">✉️ tomer5d@gmail.com</a>
+    <a class="cc" href="https://www.tomerdar.co.il" target="_blank">🌐 tomerdar.co.il</a>
+    <a class="cc" href="https://www.facebook.com/dartomer/" target="_blank">📘 פייסבוק</a>
+    <a class="cc" href="https://www.instagram.com/tomer_dar_hafakot" target="_blank">📸 אינסטגרם</a>
+    <a class="cc" href="https://www.tiktok.com/@tomerdar_hafakot" target="_blank">🎵 טיקטוק</a>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-bar">
+  <input type="text" placeholder="🔍  חפש אטרקציה..." oninput="doSearch(this.value)">
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <div class="tabs">
+    <div class="tab active" data-c="all"      onclick="fcat('all',this)">🎉 הכל</div>
+    <div class="tab" data-c="ninja"    onclick="fcat('ninja',this)">🥷 נינגה ואתגרי</div>
+    <div class="tab" data-c="water"    onclick="fcat('water',this)">💧 מים</div>
+    <div class="tab" data-c="festival" onclick="fcat('festival',this)">🎪 פסטיבלים</div>
+    <div class="tab" data-c="game"     onclick="fcat('game',this)">🎯 תחנות משחק</div>
+    <div class="tab" data-c="deco"     onclick="fcat('deco',this)">🎨 תפאורה ודמויות</div>
+    <div class="tab" data-c="kids"     onclick="fcat('kids',this)">🌟 קטנטנים ונוער</div>
+    <div class="tab" data-c="workshop" onclick="fcat('workshop',this)">🎭 סדנאות</div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+<div class="no-results" id="nr"><span>😕</span>לא נמצאו תוצאות</div>
+
+<!-- ===== נינגה ===== -->
+<div class="sec sec-ninja" data-cat="ninja">
+  <div class="sec-hdr" data-bg="🥷">
+    <span style="font-size:2rem">🥷</span>
+    <span class="sec-hdr-title">נינגה ואתגרי</span>
+    <span class="sec-hdr-count">7 אטרקציות</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="נינגה 37 מטר אקסטרים"
+      data-title="נינגה 37 מטר – הפסטיבל הגדול בישראל!"
+      data-emoji="🥷"
+      data-desc="המתקן המתנפח הגדול ביותר בישראל! 37 מטר המורכבים מ-4 חלקים הכוללים את כל אלמנטי הנינגה, וקיר טיפוס בגובה 4 מטרים ובסופו קפיצה חופשית. קיים תקן אישור מכון התקנים וביטוח מלא."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_5e7094dbd63e9.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5e7094dc21ed8.jpg,catalog_imgs/p2_img1.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_5f453110c1c91.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_658b00903abad.jpg"
+      data-badges="יחיד בישראל|b3,הגדול בארץ|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_5e7094dbd63e9.jpg" alt="נינגה 37" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🥷</div>
+      <div class="c-body">
+        <span class="c-emoji">🥷</span>
+        <div class="c-title">נינגה 37 מטר (4 חלקים)</div>
+        <div class="c-desc">קפיצה חופשית של 4 מטר באוויר בסיום!</div>
+        <div class="badges"><span class="badge b3">יחיד בישראל</span><span class="badge b1">הגדול בארץ</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="נינגה 26 מטר סטפר קיר המוות"
+      data-title="נינגה 26 מטר (2 חלקים)"
+      data-emoji="🥷"
+      data-desc="מסלול נינגה 26 מטר המורכב מ-2 חלקים. כולל: סטפר, בומבילות, חבלים, קיר המוות ועוד. בסוף לוח סטופר למדידת זמנים."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_5f453110e5682.jpg,catalog_imgs/p2_img2.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_63b00a00346b2.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_63b0042cce85f.jpg"
+      data-badges="מאתגר|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_5f453110e5682.jpg" alt="נינגה 26" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🥷</div>
+      <div class="c-body">
+        <span class="c-emoji">🥷</span>
+        <div class="c-title">נינגה 26 מטר (2 חלקים)</div>
+        <div class="c-desc">סטפר, בומבילות, חבלים, קיר המוות ועוד.</div>
+        <div class="badges"><span class="badge b1">מאתגר</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="נינגה 17 מטר עמודים צמיגים"
+      data-title="נינגה 17 מטר"
+      data-emoji="🥷"
+      data-desc="מסלול מכשולים 17 מטר הכולל עמודים, צמיגים, לולאות ועוד. בסוף המסלול זמזם הסיום ולוח סטופר ענק למדידת זמנים."
+      data-imgs="catalog_imgs/p2_img3.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_5f45394a9d6cd.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_658b00da5a25a.jpg"
+      data-badges="לכל גיל|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p2_img3.jpeg" alt="נינגה 17" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🥷</div>
+      <div class="c-body">
+        <span class="c-emoji">🥷</span>
+        <div class="c-title">נינגה 17 מטר</div>
+        <div class="c-desc">עמודים, צמיגים, לולאות + לוח סטופר.</div>
+        <div class="badges"><span class="badge b4">לכל גיל</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="לייזר קומבאט זירה חדרים עשן"
+      data-title="לייזר קומבאט – יחיד בישראל!"
+      data-emoji="🔫"
+      data-desc="זירה מתנפחת חשוכה 12×12 מ' הכוללת כ-9 חדרים עם עשן, מוזיקה קצבית ותאורה צבעונית. היחידי בארץ שרואים את קרן הלייזר בירי! ללא וסטים. עד 200 משתתפים בשעה."
+      data-imgs="catalog_imgs/p7_img1.jpeg,catalog_imgs/p7_img2.jpeg,catalog_imgs/p7_img3.jpeg"
+      data-badges="יחיד בישראל|b3,200 משתתפים/שעה|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p7_img1.jpeg" alt="לייזר קומבאט" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🔫</div>
+      <div class="c-body">
+        <span class="c-emoji">🔫</span>
+        <div class="c-title">לייזר קומבאט</div>
+        <div class="c-desc">זירה 12×12 מ', 9 חדרים, עשן ותאורה. עד 200 משתתפים/שעה!</div>
+        <div class="badges"><span class="badge b3">יחיד בישראל</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="אתגרון מסלול אתגרי מתנפח"
+      data-title="אתגרון 12×3 מ'"
+      data-emoji="💪"
+      data-desc="מסלול אתגרי מתנפח 12×3 מ' לכל הגילאים. מושלם לימי כיף, פסטיבלים ואירועים גדולים."
+      data-imgs="catalog_imgs/p3_img4.jpeg,catalog_imgs/p5_img1.jpeg,catalog_imgs/p6_img1.jpeg"
+      data-badges="לכל גיל|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p3_img4.jpeg" alt="אתגרון" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">💪</div>
+      <div class="c-body">
+        <span class="c-emoji">💪</span>
+        <div class="c-title">אתגרון 12×3 מ'</div>
+        <div class="c-desc">מסלול אתגרי לכל הגילאים לאירועים גדולים.</div>
+        <div class="badges"><span class="badge b4">לכל גיל</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="קיר טיפוס סולמות"
+      data-title="קיר טיפוס משולב סולמות"
+      data-emoji="🧗"
+      data-desc="קיר טיפוס מתנפח משולב עם סולמות – אתגר נינגה לנוער ולמבוגרים. בא בשילוב עם מסלולי הנינגה."
+      data-imgs="catalog_imgs/p13_img2.jpeg,catalog_imgs/p13_img1.jpeg"
+      data-badges="נוער ומבוגרים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p13_img2.jpeg" alt="קיר טיפוס" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🧗</div>
+      <div class="c-body">
+        <span class="c-emoji">🧗</span>
+        <div class="c-title">קיר טיפוס משולב סולמות</div>
+        <div class="c-desc">אתגר נינגה לנוער ומבוגרים.</div>
+        <div class="badges"><span class="badge b1">נוער ומבוגרים</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="באנגי גובה 10 מטר קפיצה"
+      data-title="באנגי גובה 10 מ' – הגבוה בארץ!"
+      data-emoji="⬆️"
+      data-desc="הבאנגי המתנפח הגבוה בארץ! 10 מטרים, 3 עמדות. מגיל 3 עד 12 – ללא צורך להחליף רתמות. יוצר רושם של אירוע יוקרתי. אישור מכון התקנים 5378."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_5c73b1ed08dc0.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5c73b1ed36784.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5c7a47b010252.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5c7a47c6ab1d4.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5c7a481c8159c.jpg"
+      data-badges="הגבוה בארץ|b3,מגיל 3!|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_5c73b1ed08dc0.jpg" alt="באנגי" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">⬆️</div>
+      <div class="c-body">
+        <span class="c-emoji">⬆️</span>
+        <div class="c-title">באנגי גובה 10 מ'</div>
+        <div class="c-desc">הגבוה בארץ! 3 עמדות, מגיל 3. אישור מכון התקנים.</div>
+        <div class="badges"><span class="badge b3">הגבוה בארץ</span><span class="badge b1">מגיל 3!</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== מים ===== -->
+<div class="sec sec-water" data-cat="water">
+  <div class="sec-hdr" data-bg="💧">
+    <span style="font-size:2rem">💧</span>
+    <span class="sec-hdr-title">אטרקציות מים</span>
+    <span class="sec-hdr-count">18 אטרקציות</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="מגלשת חלל ישראל 10 מטר גדולה"
+      data-title="מגלשת חלל ישראל"
+      data-emoji="🚀"
+      data-desc="מגלשת הענק! גובה 10 מ', אורך 7 מ', גלישה מגובה 7 מ'. עובדת רטוב ויבש. תפאורה בעיצוב חלל."
+      data-imgs="catalog_imgs/p16_img1.jpeg,catalog_imgs/p16_img2.jpeg,catalog_imgs/p4_img3.jpeg"
+      data-badges="מגלשת ענק|b1,רטוב/יבש|b2"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p16_img1.jpeg" alt="מגלשת חלל" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🚀</div>
+      <div class="c-body">
+        <span class="c-emoji">🚀</span>
+        <div class="c-title">מגלשת חלל ישראל</div>
+        <div class="c-desc">גובה 10 מ', אורך 7 מ'. רטוב ויבש.</div>
+        <div class="badges"><span class="badge b1">גובה 10 מ'</span><span class="badge b2">רטוב/יבש</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מגלשת קיץ 7.5 מטר"
+      data-title="מגלשת קיץ"
+      data-emoji="☀️"
+      data-desc="גובה 7.5 מ', אורך 13 מ' (הארוכה!), גלישה מגובה 5 מ'. עובדת רטוב ויבש."
+      data-imgs="catalog_imgs/p16_img2.jpeg,catalog_imgs/p16_img3.jpeg"
+      data-badges="אורך 13 מ'|b1,רטוב/יבש|b2"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p16_img2.jpeg" alt="מגלשת קיץ" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">☀️</div>
+      <div class="c-body">
+        <span class="c-emoji">☀️</span>
+        <div class="c-title">מגלשת קיץ</div>
+        <div class="c-desc">גובה 7.5 מ', אורך 13 מ'. רטוב ויבש.</div>
+        <div class="badges"><span class="badge b1">אורך 13 מ'</span><span class="badge b2">רטוב/יבש</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מגלשת מים דו מסלולית תחרות"
+      data-title="מגלשת מים דו מסלולית"
+      data-emoji="💦"
+      data-desc="גובה 8 מ', אורך 15 מ', 2 מסלולות לתחרויות ראש בראש! גלישה מגובה 5 מ'. עובדת רטוב ויבש."
+      data-imgs="catalog_imgs/p16_img3.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_63b008c9d386c.jpg"
+      data-badges="2 מסלולות|b1,תחרותי|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p16_img3.jpeg" alt="מגלשה דו מסלולית" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">💦</div>
+      <div class="c-body">
+        <span class="c-emoji">💦</span>
+        <div class="c-title">מגלשת מים דו מסלולית</div>
+        <div class="c-desc">גובה 8 מ', 2 מסלולות. תחרויות ראש בראש!</div>
+        <div class="badges"><span class="badge b4">תחרותי</span></div>
+        <div class="c-hint">לחץ לגלריה ופרטים ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מגלשות מים קטנות דקלים כריש סוכריות שמש פיראטים גלידות גיל הרך"
+      data-title="מגלשות מים לילדים – 6 עיצובים!"
+      data-emoji="🌊"
+      data-desc="מגוון מגלשות מים קטנות לגיל הרך ולילדים: דקלים 3 מ', כריש 3 מ', סוכריות 4 מ', שמש 4 מ', פיראטים 4 מ', גלידות 4 מ'. כל אחת בעיצוב שונה ומושך."
+      data-imgs="catalog_imgs/p17_img1.jpeg,catalog_imgs/p17_img2.jpeg,catalog_imgs/p17_img3.jpeg,catalog_imgs/p17_img4.jpeg,catalog_imgs/p17_img5.jpeg,catalog_imgs/p17_img6.jpeg,catalog_imgs/p17_img7.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_658b06fe2d48a.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_658b070aedda9.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_658b05b99f8df.jpg"
+      data-badges="6 עיצובים|b1,גיל הרך|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p17_img1.jpeg" alt="מגלשות קטנות" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🌊</div>
+      <div class="c-body">
+        <span class="c-emoji">🌊</span>
+        <div class="c-title">מגלשות מים לילדים</div>
+        <div class="c-desc">6 עיצובים: כריש, דקלים, סוכריות, שמש, פיראטים, גלידות.</div>
+        <div class="badges"><span class="badge b1">6 עיצובים</span><span class="badge b4">גיל הרך</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="חייזר מערב פרוע תמנון החלקה קרקס פיראטים אטרקציות מים"
+      data-title="אטרקציות מים ענק – 6 עיצובים"
+      data-emoji="🐙"
+      data-desc="מגוון אטרקציות מים גדולות בגובה 5.5–6 מ': חייזר 5.5 מ', מערב פרוע 5.5 מ', תמנון 6 מ', החלקה 6 מ', קרקס 6 מ', פיראטים 6 מ'. כולן כוללות מגלשה ובריכה."
+      data-imgs="catalog_imgs/p18_img1.jpeg,catalog_imgs/p18_img2.jpeg,catalog_imgs/p18_img3.jpeg,catalog_imgs/p18_img4.jpeg,catalog_imgs/p18_img5.jpeg,catalog_imgs/p18_img6.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_628b771980631.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_6370e86da73e4.jpg"
+      data-badges="6 עיצובים|b1,5.5–6 מ'|b2"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p18_img1.jpeg" alt="אטרקציות מים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🐙</div>
+      <div class="c-body">
+        <span class="c-emoji">🐙</span>
+        <div class="c-title">אטרקציות מים ענק</div>
+        <div class="c-desc">חייזר, מערב פרוע, תמנון, קרקס, פיראטים ועוד. 5.5–6 מ'.</div>
+        <div class="badges"><span class="badge b2">6 עיצובים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="בריכה מתנפחת שחייה 7x7"
+      data-title="בריכה מתנפחת 7×7"
+      data-emoji="🏊"
+      data-desc="בריכה מתנפחת גדולה 7×7 מ' לשחייה ומשחקים. מגיעה עם בימות, ספסלים ומגלשה."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_5c7825b091bf2.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_5e635ce6ededc.jpg,catalog_imgs/p18_img7.jpeg,catalog_imgs/p18_img8.jpeg"
+      data-badges="7×7 מ'|b2"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_5e635ce6ededc.jpg" alt="בריכה" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🏊</div>
+      <div class="c-body">
+        <span class="c-emoji">🏊</span>
+        <div class="c-title">בריכה מתנפחת 7×7</div>
+        <div class="c-desc">בריכה עם בימות וספסלים. לשחייה ומשחקים.</div>
+        <div class="badges"><span class="badge b2">7×7 מ'</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="בימבות פדלים דייג דגים מים"
+      data-title="בימבות + פדלים + דייג דגים"
+      data-emoji="🛶"
+      data-desc="בימבות מתנפחות 8×3 על המים, סירות פדלים ותחנת דייג דגים. מתאים לכל הגילאים ומוסיף אלמנט שקט ומהנה לצד האטרקציות הסוערות."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_63b008cc2c450.jpg,catalog_imgs/p18_img9.jpeg,catalog_imgs/p18_img10.jpeg"
+      data-badges="לכל גיל|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_63b008cc2c450.jpg" alt="פדלים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🛶</div>
+      <div class="c-body">
+        <span class="c-emoji">🛶</span>
+        <div class="c-title">בימבות, פדלים ודייג</div>
+        <div class="c-desc">שלוש אטרקציות מים שקטות ומהנות.</div>
+        <div class="badges"><span class="badge b4">לכל גיל</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="אוהל גשם מים גיל הרך"
+      data-title="אוהל גשם"
+      data-emoji="🌧️"
+      data-desc="אוהל מים לגיל הרך עם גשם מבוקר ומהנה. מושלם לקייטנות ואירועי ילדים קטנים."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_6370e89aafb0d.jpg,catalog_imgs/p18_img11.jpeg"
+      data-badges="גיל הרך|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_6370e89aafb0d.jpg" alt="אוהל גשם" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🌧️</div>
+      <div class="c-body">
+        <span class="c-emoji">🌧️</span>
+        <div class="c-title">אוהל גשם</div>
+        <div class="c-desc">גשם מבוקר ומשמח לגיל הרך.</div>
+        <div class="badges"><span class="badge b4">גיל הרך</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="לייזר טאג מים רובים קרב 100 משתתפים"
+      data-title="לייזר טאג מים – עד 100 משתתפים!"
+      data-emoji="💦🔫"
+      data-desc="קרב מים עם רובי מים ומערכת זיהוי כמות מים. 10 חביות ענק ממולאות מים לאורך התחרות. מתחלקים לקבוצות – מי שהמדיד שלו מלא יוצא. האחרון מנצח! עד 100 משתתפים במקביל."
+      data-imgs="catalog_imgs/p19_img1.jpeg,catalog_imgs/p19_img2.jpeg,catalog_imgs/p19_img3.jpeg"
+      data-badges="ייחודי!|b3,100 משתתפים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p19_img1.jpeg" alt="לייזר טאג מים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">💦🔫</div>
+      <div class="c-body">
+        <span class="c-emoji">💦🔫</span>
+        <div class="c-title">לייזר טאג מים</div>
+        <div class="c-desc">קרב מים עם מדידה! עד 100 משתתפים במקביל.</div>
+        <div class="badges"><span class="badge b3">ייחודי!</span><span class="badge b1">100 משתתפים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="תותח קצף מים חגיגה"
+      data-title="תותח קצף + תפאורה"
+      data-emoji="🫧"
+      data-desc="תותח קצף ענק עם תפאורה מתנפחת – חגיגת קצף בלתי נשכחת! פותח ואוסף קהל כמו מגנט."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_63b008c991113.jpg,catalog_imgs/p19_img2.jpeg"
+      data-badges="סופר מושך|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_63b008c991113.jpg" alt="תותח קצף" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🫧</div>
+      <div class="c-body">
+        <span class="c-emoji">🫧</span>
+        <div class="c-title">תותח קצף</div>
+        <div class="c-desc">חגיגת קצף בלתי נשכחת עם תפאורה.</div>
+        <div class="badges"><span class="badge b3">סופר מושך!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== פסטיבלים ===== -->
+<div class="sec sec-festival" data-cat="festival">
+  <div class="sec-hdr" data-bg="🎪">
+    <span style="font-size:2rem">🎪</span>
+    <span class="sec-hdr-title">פסטיבלים</span>
+    <span class="sec-hdr-count">6 פסטיבלים</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="פסטיבל נינגה גדול 3 מסלולים"
+      data-title="פסטיבל הנינגה הגדול בישראל"
+      data-emoji="🥷"
+      data-desc="3 מסלולי נינגה: 37 מ', 26 מ', 17 מ'. הפסטיבל הגדול ביותר לנינגה בישראל! מתאים לכל הגילאים ויוצר חוויה אדרנלינית בלתי נשכחת."
+      data-imgs="https://images.cdn-files-a.com/uploads/1933414/2000_5e7094dbd63e9.jpg,catalog_imgs/p2_img1.jpeg,https://images.cdn-files-a.com/uploads/1933414/2000_5f453110c1c91.jpg,https://images.cdn-files-a.com/uploads/1933414/2000_658b00903abad.jpg"
+      data-badges="הגדול בישראל|b3,3 מסלולים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="https://images.cdn-files-a.com/uploads/1933414/2000_5e7094dbd63e9.jpg" alt="פסטיבל נינגה" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🥷</div>
+      <div class="c-body">
+        <span class="c-emoji">🥷</span>
+        <div class="c-title">פסטיבל הנינגה הגדול</div>
+        <div class="c-desc">3 מסלולים: 37 מ', 26 מ', 17 מ'. הגדול בישראל!</div>
+        <div class="badges"><span class="badge b3">הגדול בישראל</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="פסטיבל קרקס טירה מגלשה אתגרון"
+      data-title="פסטיבל קרקס"
+      data-emoji="🎡"
+      data-desc="פסטיבל שלם בנושא קרקס: טירה 5×4, מגלשה 6 מ', אתגרון 12×3, מיטת צעצועים 7×6, מתחם ביתנים, כדורסל, דמויות ושער קרקס 8 מ'."
+      data-imgs="catalog_imgs/p3_img2.jpeg,catalog_imgs/p3_img3.jpeg,catalog_imgs/p3_img6.jpeg,catalog_imgs/p3_img8.jpeg,catalog_imgs/p3_img9.jpeg"
+      data-badges="חבילה מלאה|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p3_img6.jpeg" alt="פסטיבל קרקס" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🎡</div>
+      <div class="c-body">
+        <span class="c-emoji">🎡</span>
+        <div class="c-title">פסטיבל קרקס</div>
+        <div class="c-desc">טירה, מגלשה, אתגרון, ביתנים, דמויות ושער.</div>
+        <div class="badges"><span class="badge b1">חבילה מלאה</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="פסטיבל חלל חללית מגלשה"
+      data-title="פסטיבל חלל"
+      data-emoji="🚀"
+      data-desc="פסטיבל בנושא חלל: מגלשת חלל 9×4 מ', טירה 5×4, חללית גובה 10 מ', מתחם ביתנים, שער כניסה 10 מ', כדורים מעופפים והוקי."
+      data-imgs="catalog_imgs/p4_img3.jpeg,catalog_imgs/p4_img1.jpeg,catalog_imgs/p4_img2.jpeg,catalog_imgs/p4_img4.jpeg,catalog_imgs/p4_img5.jpeg"
+      data-badges="מרהיב|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p4_img3.jpeg" alt="פסטיבל חלל" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🚀</div>
+      <div class="c-body">
+        <span class="c-emoji">🚀</span>
+        <div class="c-title">פסטיבל חלל</div>
+        <div class="c-desc">מגלשת חלל 9 מ', חללית 10 מ', ביתנים, הוקי ועוד.</div>
+        <div class="badges"><span class="badge b1">מרהיב</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="פסטיבל פיראטים אתגרון מגלשה"
+      data-title="פסטיבל פיראטים"
+      data-emoji="🏴‍☠️"
+      data-desc="פסטיבל בנושא פיראטים: אתגרון 12×3, מגלשה 6 מ' ו-4.5 מ', טירה 5×4, ביתנים, קקטוס, גרזנים, אוהל חץ וקשת, כדורסל ושער פיראטים 10 מ'."
+      data-imgs="catalog_imgs/p5_img2.jpeg,catalog_imgs/p5_img3.jpeg,catalog_imgs/p5_img5.jpeg,catalog_imgs/p5_img9.jpeg,catalog_imgs/p5_img13.jpeg"
+      data-badges="חבילה מלאה|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p5_img2.jpeg" alt="פסטיבל פיראטים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🏴‍☠️</div>
+      <div class="c-body">
+        <span class="c-emoji">🏴‍☠️</span>
+        <div class="c-title">פסטיבל פיראטים</div>
+        <div class="c-desc">אתגרון, מגלשות, ביתנים, גרזנים, חץ וקשת ועוד.</div>
+        <div class="badges"><span class="badge b1">חבילה מלאה</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="פסטיבל סוכריות צבעוני עיצוב אישי יחיד"
+      data-title="פסטיבל סוכריות – עיצוב יחיד בארץ!"
+      data-emoji="🍭"
+      data-desc="מתנפחים בעיצוב אישי יחיד בארץ – הפסטיבל הכי צבעוני שראיתם! כולל אתגרון, טירה 5×4, מגלשה 10×3, ביתנים וכל מה שצריך לפסטיבל שלם."
+      data-imgs="catalog_imgs/p6_img5.jpeg,catalog_imgs/p6_img1.jpeg,catalog_imgs/p6_img2.jpeg,catalog_imgs/p6_img3.jpeg,catalog_imgs/p6_img4.jpeg,catalog_imgs/p6_img6.jpeg"
+      data-badges="עיצוב יחיד בארץ!|b3,הכי צבעוני!|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p6_img5.jpeg" alt="פסטיבל סוכריות" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🍭</div>
+      <div class="c-body">
+        <span class="c-emoji">🍭</span>
+        <div class="c-title">פסטיבל סוכריות</div>
+        <div class="c-desc">עיצוב אישי יחיד בארץ! הכי צבעוני שראיתם.</div>
+        <div class="badges"><span class="badge b3">יחיד בארץ!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="פסטיבל עפיפונים סדנה בועות"
+      data-title="פסטיבל עפיפונים"
+      data-emoji="🪁"
+      data-desc="עפיפונים מיוחדים שעפים גם ללא רוח! כולל סדנת עפיפונים לגיל הרך, סדנת בועות, שטיחי משחק, פזלי ענק, מחצלות ודמויות כדורים פורחים."
+      data-imgs="catalog_imgs/p9_img4.jpeg,catalog_imgs/p9_img1.jpeg,catalog_imgs/p9_img2.jpeg,catalog_imgs/p9_img3.jpeg,catalog_imgs/p9_img5.jpeg"
+      data-badges="גיל הרך|b4,ייחודי|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p9_img4.jpeg" alt="פסטיבל עפיפונים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🪁</div>
+      <div class="c-body">
+        <span class="c-emoji">🪁</span>
+        <div class="c-title">פסטיבל עפיפונים</div>
+        <div class="c-desc">עפיפונים ללא רוח, סדנאות, בועות, פזלי ענק.</div>
+        <div class="badges"><span class="badge b4">גיל הרך</span><span class="badge b1">ייחודי</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== תחנות משחק ===== -->
+<div class="sec sec-game" data-cat="game">
+  <div class="sec-hdr" data-bg="🎯">
+    <span style="font-size:2rem">🎯</span>
+    <span class="sec-hdr-title">תחנות משחק</span>
+    <span class="sec-hdr-count">17 תחנות</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="ג'לי בול רובי כדורי גלי"
+      data-title="ג'לי בול"
+      data-emoji="🟡"
+      data-desc="מתחם 12×8 עם רובי גלי כדורי ג'לי, קסדות מוזיקה ומדריכים. חוויה ייחודית שלא ראיתם בשום מקום!"
+      data-imgs="catalog_imgs/p8_img1.jpeg,catalog_imgs/p8_img3.jpeg"
+      data-badges="ייחודי|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p8_img1.jpeg" alt="ג'לי בול" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🟡</div>
+      <div class="c-body">
+        <span class="c-emoji">🟡</span>
+        <div class="c-title">ג'לי בול</div>
+        <div class="c-desc">רובי גלי כדורי ג'לי וקסדות מוזיקה!</div>
+        <div class="badges"><span class="badge b3">ייחודי</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="קארטינג מכוניות 20 זהירות בדרכים"
+      data-title="קארטינג 15×20 – 20 מכוניות!"
+      data-emoji="🏎️"
+      data-desc="מתחם קארטינג ענק 15×20 מ' הכולל 20 מכוניות! מעולה לאירועים גדולים ולפרויקט זהירות בדרכים."
+      data-imgs="catalog_imgs/p8_img2.jpeg,catalog_imgs/p8_img3.jpeg"
+      data-badges="20 מכוניות!|b1,15×20 מ'|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p8_img2.jpeg" alt="קארטינג" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🏎️</div>
+      <div class="c-body">
+        <span class="c-emoji">🏎️</span>
+        <div class="c-title">קארטינג 15×20</div>
+        <div class="c-desc">20 מכוניות! מעולה לפרויקט זהירות בדרכים.</div>
+        <div class="badges"><span class="badge b1">20 מכוניות!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="תחנות משחק כדורסל כדורגל פנדל קקטוס גרזנים"
+      data-title="תחנות ספורט – מגוון רחב"
+      data-emoji="⚽"
+      data-desc="מגוון עשיר של תחנות ספורט מתנפחות: כדורסל (4 בשורה / 6 סלים), כדורגל 6 שערים, כדורגל אנושי, פנדל, קקטוס, גרזנים, מעופפים, רוגטקה, סקין בול, קלע, הוקי, איקס עיגול, בייסבול."
+      data-imgs="catalog_imgs/p14_img1.jpeg,catalog_imgs/p14_img2.jpeg,catalog_imgs/p14_img3.jpeg,catalog_imgs/p14_img4.jpeg,catalog_imgs/p15_img1.jpeg,catalog_imgs/p15_img2.jpeg,catalog_imgs/p15_img3.jpeg,catalog_imgs/p15_img4.jpeg,catalog_imgs/p15_img5.jpeg"
+      data-badges="13+ תחנות|b1,לכל גיל|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p14_img3.jpeg" alt="תחנות ספורט" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">⚽</div>
+      <div class="c-body">
+        <span class="c-emoji">⚽</span>
+        <div class="c-title">תחנות ספורט מתנפחות</div>
+        <div class="c-desc">13+ תחנות: כדורסל, כדורגל, פנדל, גרזנים, הוקי ועוד.</div>
+        <div class="badges"><span class="badge b1">13+ תחנות</span><span class="badge b4">לכל גיל</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="כדורגל אנושי כדורים גדולים"
+      data-title="כדורגל אנושי"
+      data-emoji="🧑‍🤝‍🧑"
+      data-desc="שחקנים בתוך כדורים מתנפחים גדולים משחקים כדורגל! חוויה מצחיקה ומרגשת שכולם רוצים לחזור אליה."
+      data-imgs="catalog_imgs/p15_img6.jpeg,catalog_imgs/p15_img7.jpeg,catalog_imgs/p15_img8.jpeg"
+      data-badges="מטורף!|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p15_img6.jpeg" alt="כדורגל אנושי" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🧑‍🤝‍🧑</div>
+      <div class="c-body">
+        <span class="c-emoji">🧑‍🤝‍🧑</span>
+        <div class="c-title">כדורגל אנושי</div>
+        <div class="c-desc">כדורגל בתוך כדורים ענקיים – צחוק מובטח!</div>
+        <div class="badges"><span class="badge b3">מטורף!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מתחם ירי חץ וקשת פיינטבול"
+      data-title="מתחמי ירי"
+      data-emoji="🏹"
+      data-desc="מגוון מתחמי ירי: חץ וקשת מקצועי עם מדריכים, ירי בגלי בול, ירי בפיינטבול. כיף לכל הגילאים."
+      data-imgs="catalog_imgs/p20_img1.jpeg,catalog_imgs/p20_img2.jpeg,catalog_imgs/p20_img3.jpeg"
+      data-badges="עם מדריך|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p20_img1.jpeg" alt="מתחמי ירי" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🏹</div>
+      <div class="c-body">
+        <span class="c-emoji">🏹</span>
+        <div class="c-title">מתחמי ירי</div>
+        <div class="c-desc">חץ וקשת, גלי בול, פיינטבול – עם מדריכים.</div>
+        <div class="badges"><span class="badge b4">עם מדריך</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="תא הכסף שטרות תפיסה"
+      data-title="תא הכסף"
+      data-emoji="💰"
+      data-desc="תא מתנפח שממנו נפזרים שטרות כסף – תפוס כמה שיותר! חוויה מטורפת שיוצרת בהלה מהנה. הפריט הכי נדרש באירועים גדולים."
+      data-imgs="catalog_imgs/p14_img9.jpeg,catalog_imgs/p14_img10.jpeg"
+      data-badges="הכי נדרש!|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p14_img9.jpeg" alt="תא הכסף" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">💰</div>
+      <div class="c-body">
+        <span class="c-emoji">💰</span>
+        <div class="c-title">תא הכסף</div>
+        <div class="c-desc">שטרות עפים בתוך תא מתנפח – תפוס!</div>
+        <div class="badges"><span class="badge b3">הכי נדרש!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== תפאורה ===== -->
+<div class="sec sec-deco" data-cat="deco">
+  <div class="sec-hdr" data-bg="🎨">
+    <span style="font-size:2rem">🎨</span>
+    <span class="sec-hdr-title">תפאורה מתנפחת ודמויות</span>
+    <span class="sec-hdr-count">25+ פריטים</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="שערי כניסה מתנפחים ישראל פנטזיה פיראטים קרקס דולפין כריש"
+      data-title="שערי כניסה מתנפחים – 11 עיצובים"
+      data-emoji="🚪"
+      data-desc="11 שערי כניסה מתנפחים: ישראל 10 מ', פנטזיה 10 מ', סוכריות 10 מ', פיראטים 10 מ', קרקס 8 מ', אגדות 10 מ', חלל 10 מ', דולפין 6 מ' ו-10 מ', סאמר 8 מ', כריש 10 מ'."
+      data-imgs="catalog_imgs/p10_img1.jpeg,catalog_imgs/p10_img2.jpeg,catalog_imgs/p10_img3.jpeg,catalog_imgs/p10_img4.jpeg,catalog_imgs/p10_img5.jpeg,catalog_imgs/p10_img6.jpeg,catalog_imgs/p10_img7.jpeg,catalog_imgs/p10_img8.jpeg,catalog_imgs/p10_img9.jpeg,catalog_imgs/p10_img10.jpeg,catalog_imgs/p10_img11.jpeg"
+      data-badges="11 עיצובים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p10_img5.jpeg" alt="שערי כניסה" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🚪</div>
+      <div class="c-body">
+        <span class="c-emoji">🚪</span>
+        <div class="c-title">שערי כניסה מתנפחים</div>
+        <div class="c-desc">11 עיצובים שונים עד 10 מ' גובה.</div>
+        <div class="badges"><span class="badge b1">11 עיצובים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="דמויות מתנפחות תמנון ברווז פינגווין ליצן פיראטים רובוטריקים"
+      data-title="דמויות מתנפחות"
+      data-emoji="🤡"
+      data-desc="מגוון דמויות מתנפחות: דני שובבני, תמנון, ברווז, פינגווין, כדור פורח, ליצן, פיראטים, רובוטריקים. כל אחת מוסיפה אווירה ייחודית לאירוע."
+      data-imgs="catalog_imgs/p11_img1.jpeg,catalog_imgs/p11_img2.jpeg,catalog_imgs/p11_img3.jpeg,catalog_imgs/p11_img4.jpeg,catalog_imgs/p11_img5.jpeg,catalog_imgs/p11_img6.jpeg,catalog_imgs/p11_img7.jpeg,catalog_imgs/p11_img8.jpeg,catalog_imgs/p11_img9.jpeg,catalog_imgs/p11_img10.jpeg"
+      data-badges="8+ עיצובים|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p11_img10.jpeg" alt="דמויות" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🤡</div>
+      <div class="c-body">
+        <span class="c-emoji">🤡</span>
+        <div class="c-title">דמויות מתנפחות</div>
+        <div class="c-desc">8+ דמויות: תמנון, ברווז, ליצן, פיראטים, רובוטריקים ועוד.</div>
+        <div class="badges"><span class="badge b3">8+ עיצובים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מתנפחי תפאורה גדולים גלידות ספיידר שמש חד קרן כריש"
+      data-title="מתנפחי תפאורה ענקיים"
+      data-emoji="🦄"
+      data-desc="מתנפחי תפאורה בעיצובים שונים: גלידות 5 מ', פרוע 5 מ', ספיידר 6 מ', שמש 5 מ', תמנון 6 מ', ג'ונגל 4 מ', חד קרן 6×4, כריש 4.5 מ'."
+      data-imgs="catalog_imgs/p12_img1.jpeg,catalog_imgs/p12_img2.jpeg,catalog_imgs/p12_img3.jpeg,catalog_imgs/p12_img4.jpeg,catalog_imgs/p12_img5.jpeg,catalog_imgs/p12_img6.jpeg,catalog_imgs/p12_img7.jpeg,catalog_imgs/p12_img8.jpeg"
+      data-badges="8 עיצובים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p12_img8.jpeg" alt="מתנפחי תפאורה" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🦄</div>
+      <div class="c-body">
+        <span class="c-emoji">🦄</span>
+        <div class="c-title">מתנפחי תפאורה ענקיים</div>
+        <div class="c-desc">8 עיצובים: חד קרן, כריש, שמש, ג'ונגל ועוד.</div>
+        <div class="badges"><span class="badge b1">8 עיצובים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מתחמי ביתנים קרקס פיראטים חלל עמודי דקורציה"
+      data-title="מתחמי ביתנים + עמודי דקורציה"
+      data-emoji="🏕️"
+      data-desc="מתחמי ביתנים מתנפחים בעיצובים קרקס, פיראטים וחלל. בנוסף: 8 עמודי דקורציה מתנפחים ליצירת אווירה לאורך האירוע."
+      data-imgs="catalog_imgs/p14_img1.jpeg,catalog_imgs/p14_img2.jpeg,catalog_imgs/p11_img9.jpeg,catalog_imgs/p11_img10.jpeg"
+      data-badges="3 עיצובים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p14_img1.jpeg" alt="ביתנים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🏕️</div>
+      <div class="c-body">
+        <span class="c-emoji">🏕️</span>
+        <div class="c-title">ביתנים ועמודי דקורציה</div>
+        <div class="c-desc">ביתנים ב-3 עיצובים + 8 עמודי דקור.</div>
+        <div class="badges"><span class="badge b1">3 עיצובים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== קטנטנים ===== -->
+<div class="sec sec-kids" data-cat="kids">
+  <div class="sec-hdr" data-bg="🌟">
+    <span style="font-size:2rem">🌟</span>
+    <span class="sec-hdr-title">קטנטנים ונוער</span>
+    <span class="sec-hdr-count">11 אטרקציות</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="גימבורי קטנטנים גיל הרך טירה מיטת צעצועים בומבילות השרדות"
+      data-title="מתחמי קטנטנים"
+      data-emoji="👶"
+      data-desc="מגוון מתנפחים לגיל הרך: מתחם גימבורי 5×4, טירת קפיצות 5×4, מיטת צעצועים 7×6, בומבילות, השרדות 4 במות. הכל בטוח ומהנה לגיל הרך."
+      data-imgs="catalog_imgs/p13_img1.jpeg,catalog_imgs/p13_img3.jpeg,catalog_imgs/p13_img4.jpeg,catalog_imgs/p13_img5.jpeg,catalog_imgs/p13_img6.jpeg,catalog_imgs/p13_img7.jpeg,catalog_imgs/p13_img8.jpeg"
+      data-badges="גיל הרך|b4,בטוח!|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p13_img1.jpeg" alt="קטנטנים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">👶</div>
+      <div class="c-body">
+        <span class="c-emoji">👶</span>
+        <div class="c-title">מתחמי קטנטנים</div>
+        <div class="c-desc">גימבורי, טירה, בומבילות, השרדות ועוד.</div>
+        <div class="badges"><span class="badge b4">גיל הרך</span><span class="badge b1">בטוח!</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="אטרקציות נוער מולטימדיה סימולטור מצלמה 360 כדורסל ברזלים"
+      data-title="אטרקציות נוער"
+      data-emoji="🎮"
+      data-desc="פינת נוער מאובזרת: כדורסל ברזלים, שולחנות משחק, סימולטור, מצלמה 360°, אוהל לייזר, מולטימדיה ופינות ישיבה. הכל לנוער שרוצה כיף שונה."
+      data-imgs="catalog_imgs/p21_img1.jpeg,catalog_imgs/p21_img2.jpeg,catalog_imgs/p21_img3.jpeg,catalog_imgs/p21_img4.jpeg,catalog_imgs/p21_img5.jpeg,catalog_imgs/p21_img6.jpeg,catalog_imgs/p21_img7.jpeg,catalog_imgs/p21_img8.jpeg"
+      data-badges="נוער|b1,מצלמה 360°|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p21_img1.jpeg" alt="אטרקציות נוער" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🎮</div>
+      <div class="c-body">
+        <span class="c-emoji">🎮</span>
+        <div class="c-title">אטרקציות נוער</div>
+        <div class="c-desc">סימולטור, מצלמה 360°, אוהל לייזר, כדורסל ברזלים.</div>
+        <div class="badges"><span class="badge b3">מצלמה 360°</span><span class="badge b1">נוער</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="מזון פופקורן קרפ ופל ברד נקניקיות"
+      data-title="פינות מזון"
+      data-emoji="🍿"
+      data-desc="שירותי מזון לאירוע שלם: סוכר כותנה, פופקורן, קרפ, ופל בלגי, ברד ונקניקיות. הכל בדוכנים מקצועיים ומסודרים."
+      data-imgs="catalog_imgs/p21_img9.jpeg,catalog_imgs/p21_img10.jpeg,catalog_imgs/p21_img11.jpeg"
+      data-badges="6 מוצרים|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p21_img9.jpeg" alt="מזון" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🍿</div>
+      <div class="c-body">
+        <span class="c-emoji">🍿</span>
+        <div class="c-title">פינות מזון</div>
+        <div class="c-desc">סוכר, פופקורן, קרפ, ופל, ברד, נקניקיות.</div>
+        <div class="badges"><span class="badge b1">6 מוצרים</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== סדנאות ===== -->
+<div class="sec sec-workshop" data-cat="workshop">
+  <div class="sec-hdr" data-bg="🎭">
+    <span style="font-size:2rem">🎭</span>
+    <span class="sec-hdr-title">סדנאות וחוויות</span>
+    <span class="sec-hdr-count">12 סדנאות</span>
+  </div>
+  <div class="grid">
+
+    <div class="card" data-search="סדנאות איפור צמות בועות יצירה חלוקי נחל עציצים"
+      data-title="סדנאות יצירה"
+      data-emoji="🎨"
+      data-desc="מגוון עשיר של סדנאות יצירה: איפור פנים מקצועי, עיצוב שיער וצמות, בועות ענק, יצירה כללי, ציור על חלוקי נחל, עציצים (לוקחים הביתה!), עפיפונים ועוד."
+      data-imgs="catalog_imgs/p22_img1.jpeg,catalog_imgs/p22_img2.jpeg,catalog_imgs/p22_img3.jpeg,catalog_imgs/p22_img4.jpeg,catalog_imgs/p22_img5.jpeg,catalog_imgs/p22_img6.jpeg,catalog_imgs/p22_img7.jpeg,catalog_imgs/p22_img8.jpeg,catalog_imgs/p22_img9.jpeg,catalog_imgs/p22_img10.jpeg"
+      data-badges="7+ סדנאות|b1,גיל הרך|b4"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p22_img8.jpeg" alt="סדנאות יצירה" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🎨</div>
+      <div class="c-body">
+        <span class="c-emoji">🎨</span>
+        <div class="c-title">סדנאות יצירה</div>
+        <div class="c-desc">איפור, בועות, יצירה, חלוקי נחל, עציצים, עפיפונים.</div>
+        <div class="badges"><span class="badge b1">7+ סדנאות</span><span class="badge b4">גיל הרך</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="תחנות ייחודיות אוהל קריוקי שטיחי משחק פזלי ענק באנגי"
+      data-title="תחנות ייחודיות"
+      data-emoji="🎤"
+      data-desc="תחנות חוויה ייחודיות: אוהל קריוקי עם אלפי שירים, שטיחי משחק וחינוך, פזלי ענק לשיתוף פעולה, גאנגלינג מקצועי, באנגי גובה 10 מ'."
+      data-imgs="catalog_imgs/p20_img4.jpeg,catalog_imgs/p20_img5.jpeg,catalog_imgs/p20_img6.jpeg,catalog_imgs/p20_img7.jpeg,catalog_imgs/p20_img8.jpeg,catalog_imgs/p20_img9.jpeg"
+      data-badges="ייחודי|b3"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p20_img4.jpeg" alt="תחנות ייחודיות" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🎤</div>
+      <div class="c-body">
+        <span class="c-emoji">🎤</span>
+        <div class="c-title">תחנות ייחודיות</div>
+        <div class="c-desc">קריוקי, שטיחי משחק, פזלי ענק, גאנגלינג.</div>
+        <div class="badges"><span class="badge b3">ייחודי</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+    <div class="card" data-search="אומני ילדים הופעות"
+      data-title="אומני ילדים"
+      data-emoji="🎪"
+      data-desc="ייצוג אומנים מהשורה הראשונה: אומני ילדים מקצועיים, הנחיית אירועים, בימוי ותכנים – הכל ממקום אחד."
+      data-imgs="catalog_imgs/p23_img3.jpeg,catalog_imgs/p23_img4.jpeg,catalog_imgs/p23_img5.jpeg,catalog_imgs/p23_img6.jpeg,catalog_imgs/p23_img7.jpeg,catalog_imgs/p23_img8.jpeg,catalog_imgs/p23_img9.jpeg,catalog_imgs/p23_img10.jpeg"
+      data-badges="מקצועי|b1"
+      onclick="openModal(this)">
+      <div class="c-bar"></div>
+      <img class="c-img" src="catalog_imgs/p23_img3.jpeg" alt="אומני ילדים" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="c-img-placeholder" style="display:none">🎪</div>
+      <div class="c-body">
+        <span class="c-emoji">🎪</span>
+        <div class="c-title">אומני ילדים</div>
+        <div class="c-desc">אומנים מקצועיים + הנחיית אירועים.</div>
+        <div class="badges"><span class="badge b1">מקצועי</span></div>
+        <div class="c-hint">לחץ לגלריה ↓</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- end .main -->
+
+<!-- FOOTER -->
+<footer>
+  <img src="https://files.cdn-files-a.com/uploads/1933414/400_filter_nobg_67dc63202466f.png" alt="תומר דר הפקות" class="flogo" onerror="this.style.display='none'">
+  <div>
+    <a href="tel:0505748224">📞 050-5748224</a> |
+    <a href="mailto:tomer5d@gmail.com">✉️ tomer5d@gmail.com</a> |
+    <a href="https://www.tomerdar.co.il" target="_blank">🌐 tomerdar.co.il</a>
+  </div>
+  <div>
+    <a href="https://www.facebook.com/dartomer/" target="_blank">📘 פייסבוק</a> |
+    <a href="https://www.instagram.com/tomer_dar_hafakot" target="_blank">📸 אינסטגרם</a> |
+    <a href="https://www.tiktok.com/@tomerdar_hafakot" target="_blank">🎵 טיקטוק</a>
+  </div>
+  <div class="fcopy">© 2026 תומר דר הפקות | אשקלון, ישראל | ראשון–שישי 08:00–19:00</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="overlay" onclick="closeOnBg(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="gallery" id="gallery">
+      <span class="gallery-count" id="gcnt"></span>
+      <button class="gallery-nav gallery-prev" onclick="galNav(-1)">›</button>
+      <button class="gallery-nav gallery-next" onclick="galNav(1)">‹</button>
+      <div class="gallery-dots" id="gdots"></div>
+    </div>
+    <div class="modal-body">
+      <span class="modal-emoji" id="memoji"></span>
+      <div class="modal-title" id="mtitle"></div>
+      <div class="modal-desc" id="mdesc"></div>
+      <div class="modal-badges" id="mbadges"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== FILTER =====
+let aC='all', sQ='';
+function fcat(c,el){aC=c;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');applyF();}
+function doSearch(q){sQ=q.trim().toLowerCase();applyF();}
+function applyF(){
+  let tot=0;
+  document.querySelectorAll('.sec').forEach(sec=>{
+    if(aC!=='all'&&sec.dataset.cat!==aC){sec.classList.add('hidden');return;}
+    let vis=0;
+    sec.querySelectorAll('.card').forEach(c=>{
+      const txt=(c.dataset.search||'')+' '+c.querySelector('.c-title').textContent;
+      const ok=!sQ||txt.toLowerCase().includes(sQ);
+      c.style.display=ok?'':'none';
+      if(ok)vis++;
+    });
+    sec.classList.toggle('hidden',vis===0);
+    tot+=vis;
+  });
+  document.getElementById('nr').style.display=tot===0?'block':'none';
+}
+
+// ===== MODAL =====
+let galImgs=[], galIdx=0;
+
+function openModal(card){
+  const imgs=(card.dataset.imgs||'').split(',').filter(Boolean);
+  const title=card.dataset.title||card.querySelector('.c-title').textContent;
+  const desc=card.dataset.desc||'';
+  const emoji=card.dataset.emoji||'🎉';
+  const badgesRaw=(card.dataset.badges||'').split(',').filter(Boolean);
+
+  galImgs=imgs; galIdx=0;
+  document.getElementById('memoji').textContent=emoji;
+  document.getElementById('mtitle').textContent=title;
+  document.getElementById('mdesc').textContent=desc;
+
+  // badges
+  const bc=document.getElementById('mbadges');
+  bc.innerHTML='';
+  badgesRaw.forEach(b=>{
+    const [txt,cls]=b.split('|');
+    const span=document.createElement('span');
+    span.className='badge '+(cls||'b1');
+    span.textContent=txt;
+    bc.appendChild(span);
+  });
+
+  buildGallery();
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+function closeOnBg(e){if(e.target===document.getElementById('overlay'))closeModal();}
+
+function buildGallery(){
+  const g=document.getElementById('gallery');
+  // Remove old imgs
+  g.querySelectorAll('img').forEach(i=>i.remove());
+  g.querySelector('#gdots').innerHTML='';
+
+  if(!galImgs.length){g.style.display='none';return;}
+  g.style.display='block';
+
+  galImgs.forEach((src,i)=>{
+    const img=document.createElement('img');
+    img.src=src;
+    img.alt='';
+    if(i===0)img.className='active';
+    g.insertBefore(img,g.querySelector('.gallery-nav'));
+    // dot
+    const dot=document.createElement('div');
+    dot.className='gdot'+(i===0?' active':'');
+    dot.onclick=()=>goSlide(i);
+    g.querySelector('#gdots').appendChild(dot);
+  });
+  updateGalCounter();
+}
+function goSlide(idx){
+  const imgs=document.getElementById('gallery').querySelectorAll('img');
+  const dots=document.getElementById('gallery').querySelectorAll('.gdot');
+  imgs[galIdx].classList.remove('active');
+  dots[galIdx].classList.remove('active');
+  galIdx=(idx+galImgs.length)%galImgs.length;
+  imgs[galIdx].classList.add('active');
+  dots[galIdx].classList.add('active');
+  updateGalCounter();
+}
+function galNav(dir){goSlide(galIdx+dir);}
+function updateGalCounter(){
+  document.getElementById('gcnt').textContent=(galIdx+1)+' / '+galImgs.length;
+}
+
+// Close with Esc
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body>
+</html>
